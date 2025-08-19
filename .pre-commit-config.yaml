@@ -1,0 +1,22 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.12.9
+    hooks:
+      - id: ruff-format
+        name: "🐍 python · Format with Ruff"
+
+      - id: ruff
+        args: [--fix]
+      
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.28.0
+    hooks:
+    - id: gitleaks
+      name: "🔒 security · Detect hardcoded secrets"
+
+  - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
+    rev: v9.22.0
+    hooks:
+    - id: commitlint
+      name: "✏️ git · Lint commit messages"
+      stages: [commit-msg]

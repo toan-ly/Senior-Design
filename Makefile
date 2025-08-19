@@ -1,7 +1,10 @@
 
 
+### Pre-commit
+precommit:
+	pre-commit run --all-files
 
-
+### Docker
 docker-build:
 	docker build -t mental-health-assistant .
 
