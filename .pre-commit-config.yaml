@@ -20,3 +20,15 @@ repos:
     - id: commitlint
       name: "✏️ git · Lint commit messages"
       stages: [commit-msg]
+
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.8.1
+    hooks:
+      - id: nbstripout
+
+  - repo: https://github.com/nbQA-dev/nbQA
+    rev: 1.9.1
+    hooks:
+      - id: nbqa-ruff
+        name: "📓 notebook · Format markdown cells"
+        args: [--fix]
