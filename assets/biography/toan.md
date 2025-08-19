@@ -23,6 +23,11 @@
 - **Frameworks & Libraries**: FastAPI, Streamlit, Ray Serve, PyTorch, Tensorflow, Scikit-learn, OpenCV, React
 - **Tools**: Git, Github, ITK Snap 
 
+## Areas of Interest
+- Machine Learning/Deep Learning
+- Medical Imaging
+- 
+
 ## Project Sought
 - Any Deep Learning research projects
 - An application that integrates LLM and Medical Imaging (X-rays, CT scans, MRIs, etc.) to help analyze and explain results to patients in understandable language

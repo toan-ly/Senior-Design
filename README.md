@@ -1,1 +1,1 @@
-# Mental-Health-Assistant
+# Mental Assistant
