@@ -6,6 +6,7 @@ repos:
         name: "🐍 python · Format with Ruff"
 
       - id: ruff
+        name: "🐍 python · Lint with Ruff"
         args: [--fix]
       
   - repo: https://github.com/gitleaks/gitleaks
@@ -25,6 +26,7 @@ repos:
     rev: 0.8.1
     hooks:
       - id: nbstripout
+        name: "📓 notebook · Strip output from Jupyter notebooks"
 
   - repo: https://github.com/nbQA-dev/nbQA
     rev: 1.9.1
