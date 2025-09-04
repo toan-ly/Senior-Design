@@ -1,0 +1,9 @@
+- Team name: MedAssist
+- Team members:
+    - Toan Ly:
+        - Computer Science
+        - [lytq@mail.uc.edu](lytq@mail.uc.edu)
+- Project topic area:
+    - Health Support System
+    - Retrieval-Augmented Generation (RAG)
+    - LLM
