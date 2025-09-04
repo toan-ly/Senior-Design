@@ -1,1 +1,1 @@
-# Mental Assistant
+# MedAssist
