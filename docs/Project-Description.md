@@ -1,8 +1,11 @@
 - Team name: MedAssist
 - Team members:
     - Toan Ly:
-        - Computer Science
+        - Computer Science (Mathematics Minor)
         - [lytq@mail.uc.edu](lytq@mail.uc.edu)
+    - Daniel Lindsey:
+        - Computer Science
+        - [lindsede@mail.uc.edu](lindsede@mail.uc.edu)
 - Project topic area:
     - Health Support System
     - Retrieval-Augmented Generation (RAG)
