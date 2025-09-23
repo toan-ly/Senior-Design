@@ -1,7 +1,11 @@
-# D0
-In this highest level view, the inputs from the user are the messages typed into the chatbot and options for user selects (settings, user status). Mental chatbot will be the core systems processing inputs and generating responses. The outputs will be replies to the user, maybe some suggestions, and the visual health charts/trends for the user to track
+# Design Diagram Descriptions
 
-![D0](D0.svg)
+# D0
+In this highest level view, users are able to interact with the web application hosting the chatbot. End users can send messages typed into the chatbot and view chatbot options to modify their experience (delete history, edit message, etc.). The mental chatbot will then output responses to any messages received, offer suggestions based on how it has analyzed the user's mood, and provide visual health charts/trends for the user to track their progress.
+
+Users can also input personal notes into a journal to look back on their progress or reflection on by inserting additional comments. Users also are also capable of submitting questions for system users if they need help understanding certain features or just wish to leave feedback. They can modify their account information from this system interface as well. System users are capable of responding to end user questions and query the system to retrieve system status as well as the current number of active users.
+
+![D0](D0.drawio.svg)
 
 
 # D1
