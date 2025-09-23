@@ -3,7 +3,7 @@
 ## D0
 This diagram covers the high-level features our chatbot web application will support. End users can send messages typed into the chatbot and view chatbot options to modify their experience (delete history, edit message, etc.). The mental chatbot will then output responses to any messages received, offer suggestions based on how it has analyzed the user's mood, and provide visual health charts/trends for the user to track their progress.
 
-Users can also input personal notes into a journal to look back on their progress or reflect on their experience by inserting comments. Users are also capable of interacting with the system interface to submit questions for system users/administrators if they require help understanding certain features or wish to leave feedback. They can modify their account information from this system interface as well. System users are capable of responding to end user questions and query the system to retrieve system statuses as well as the current number of active users.
+Users can also input personal notes into a journal to look back on their progress or reflect on their experience by inserting comments. Users are also capable of interacting with the system interface to submit questions for system users/administrators if they require help understanding certain features or wish to leave feedback. They can modify their account information from this system interface as well. System users are capable of responding to end user questions and querying the system to retrieve system statuses as well as the current number of active users.
 
 ![D0](D0.drawio.svg)
 
