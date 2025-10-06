@@ -10,16 +10,16 @@ F2. Backend Prototype\
 F3. Frontend Prototype\
 -- Develop basic UI components (chat window, input field, response display) and establish working frontend-backend communication.
    
-F5. Implementation of Database & Core Features\
+F4. Implementation of Database & Core Features\
 -- Create database schema, implement RAG pipeline, and add core user interaction features (feedback, journaling, analytics).
 
-F6. Deployment Environment Configuration\
+F5. Deployment Environment Configuration\
 -- Set up hosting environment (local or cloud), configure dependencies, and deploy a working prototype accessible through a web UI for team testing.
     
-F7. Initial Project Documentation\
+F6. Initial Project Documentation\
 -- Complete technical documentation, architecture explanation, and simple how-to user guide.
 
-F8. Fall Report & Presentation\
+F7. Fall Report & Presentation\
 -- Compile past assignments and project details into a comprehensive report. Produce a succinct PowerPoint summarizing the report.
 
 \
