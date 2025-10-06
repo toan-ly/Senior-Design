@@ -9,38 +9,38 @@ F2. Backend Prototype\
  
 F3. Frontend Prototype\
 -- Develop basic UI components (chat window, input field, response display) and establish working frontend-backend communication.
-   
-F4. Implementation of Database & Core Features\
--- Create database schema, implement RAG pipeline, and add core user interaction features (feedback, journaling, analytics).
 
-F5. Deployment Environment Configuration\
+F4. Deployment Environment Configuration\
 -- Set up hosting environment (local or cloud), configure dependencies, and deploy a working prototype accessible through a web UI for team testing.
     
-F6. Initial Project Documentation\
+F5. Initial Project Documentation\
 -- Complete technical documentation, architecture explanation, and simple how-to user guide.
 
-F7. Fall Report & Presentation\
+F6. Fall Report & Presentation\
 -- Compile past assignments and project details into a comprehensive report. Produce a succinct PowerPoint summarizing the report.
 
 \
 **Planned for Spring 2026:**
 
-S1. System Testing & Refinement\
+S1. Implementation of Database & Secondary Features\
+-- Create database schema and add additional user interaction features (feedback, journaling, analytics).
+
+S2. System Testing & Refinement\
 -- Test chatbot responses, RAG accuracy, data storage reliability, and user interactions. Optimize performance and identify & resolve any bugs.
      
-S2. User Interaction Enhancement\
+S3. User Interaction Enhancement\
 -- Refine frontend UI/UX, implement analytics dashboards to display user mood trends, and improve upon previous features if possible.
 
-S3. Further Testing\
+S4. Further Testing\
 -- Test all features/aspects of the project to ensure stability and reliability. Identify and resolve any identified bugs.
 
-S4. Prototype Finalization\
+S5. Prototype Finalization\
 -- Document all changes to the prototype and testing results. Outline potential future improvements as well as any features that may have missed their mark or do not perform as intended.
 
-S5. Spring Report\
+S6. Spring Report\
 -- Compile all assignments and demo results into a single comprehensive report.
 
-S6. Expo\
+S7. Expo\
 -- Present project poster and give a demonstration of the finalized prototype.
 
 
