@@ -22,6 +22,6 @@
 | 17. | Refine backend modules for performance | Toan | --/--/2026 | --/--/2026 | S2
 | 18. | Test data storage and retrieval | Toan, Daniel | --/--/2026 | --/--/2026 | S3
 | 19. | Validate over system | Toan, Daniel | --/--/2026 | --/--/2026 | S3
-| 20. | Finalize documentation, designs and architecture | Toan, Daniel | --/--/2026 | --/--/2026 | S4
+| 20. | Finalize documentation, designs, and architecture | Toan, Daniel | --/--/2026 | --/--/2026 | S4
 | 21. | Prepare final project report | Toan, Daniel | --/--/2026 | --/--/2026 | S5
 | 22. | Create final presentation and demo | Toan, Daniel | --/--/2026 | --/--/2026 | S6
