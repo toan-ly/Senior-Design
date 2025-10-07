@@ -15,6 +15,7 @@
 | 10. | Finish technical documentation and repo cleanup | Toan, Daniel | 11/03/2025 | 11/14/2025 | F6
 | 11. | Initial test of chatbot response quality and relevance | Toan, Daniel | 11/17/2025 | 11/21/2025 | F5
 | 12. | Prepare Fall project report | Toan, Daniel | 11/21/2025 | 11/25/2025 | F7
+| --- | END OF FALL SEMESTER CUT OFF |             |            |            | --
 | 13. | Construct database schema | Daniel | --/--/2026 | --/--/2026 | S1
 | 14. | Integrate SQL database with backend | Daniel | --/--/2026 | --/--/2026 | S1
 | 15. | Implement user interaction features (feedback, journaling) | Daniel | --/--/2026 | --/--/2026 | S1
