@@ -10,13 +10,16 @@ F2. Backend Prototype\
 F3. Frontend Prototype\
 -- Develop basic UI components (chat window, input field, response display) and establish working frontend-backend communication.
 
-F4. Deployment Environment Configuration\
--- Set up hosting environment (local or cloud), configure dependencies, and deploy a working prototype accessible through a web UI for team testing.
-    
-F5. Initial Project Documentation\
--- Complete technical documentation, architecture explanation, and simple how-to user guide.
+F4. Fall Design Presentation\
+-- Produce a succinct PowerPoint summarizing key information from past capstone assignments and featuring an overview of the project's current progress.
 
-F6. Fall Report & Presentation\
+F5. Deployment Environment Configuration\
+-- Set up hosting environment (local or cloud), configure dependencies, and deploy a working prototype accessible through a web UI for team testing.
+
+F6. Finalize Initial Project Documentation\
+-- Complete technical documentation, architecture explanation, and compile a simple how-to user guide. Verify that the repository is completely up to date and is not missing any important information.
+
+F7. Fall Report & Presentation\
 -- Compile past assignments and project details into a comprehensive report. Produce a succinct PowerPoint summarizing the report.
 
 \
@@ -42,6 +45,3 @@ S6. Spring Report\
 
 S7. Expo\
 -- Present project poster and give a demonstration of the finalized prototype.
-
-
-    
