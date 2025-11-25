@@ -9,9 +9,17 @@
     - [User Stories](#user-stories)
     - [Design Diagrams](#design-diagrams)
 - [Project Tasks & Timeline](#project-tasks--timeline)
-    - [Project Tasks](#project-tasks)
+    - [Task List](#task-list)
     - [Timeline](#timeline)
-
+    - [Effor Matrix](#effort-matrix)
+- [ABET Concerns Essay](#abet-concerns-essay)
+- [PPT Slideshow](#ppt-slideshow)
+- [Self-Assessment Essays](#self-assessment-essays)
+- [Professional Biographies](#professional-biographies)
+- [Budget](#budget)
+- [Appendix](#appendix)
+    - [References](#references)
+    - [Evidence](#evidence)
 
 # Team Names
 - **Toan Ly**
@@ -45,7 +53,34 @@ focused assistance.
 
 # Project Tasks & Timeline
 
-## Project Tasks
-
+## Task List
+[Task List](/docs/Tasklist.md)
 
 ## Timeline
+[Time Line](/docs/Timeline.md)
+
+## Effort Matrix
+[Effort Matrix](/docs/Effort_Matrix.md)
+
+# ABET Concerns Essay
+[ABET Concerns Essay](/docs/Constraint_Essay.md)
+
+# PPT Slideshow
+[Presentation Slides](/docs/Fall_Presentation.pdf)
+
+# Self-Assessment Essays
+- [Toan Ly](/docs/essays/Toan_Ly_Individual_Capstone_Assessment.md)
+- [Daniel Lindsey](/docs/essays/Daniel_Lindsey_Individual_Capstone_Assessment.md)
+
+# Professional Biographies
+- [Toan Ly](/docs/biography/Toan_Ly_Professional_Biography.md)
+- [Daniel Lindsey](/docs/biography/Daniel_Lindsey_Professional_Biography.md)
+
+# Budget
+
+# Appendix
+
+## References
+
+- [LlamaIndex Docs](https://developers.llamaindex.ai/python/framework/understanding/rag/)
+- [DSM5](https://www.psychiatry.org/psychiatrists/practice/dsm)
