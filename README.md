@@ -8,8 +8,8 @@
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 
 
-# Table of Contents
-- [Team Names](#team-names)
+## Table of Contents
+- [Team Names](#team-overview)
 - [Project Abstract](#project-abstract) 
 - [Project Description](#project-description) 
 - [User Stories & Design Diagrams](#user-stories--design-diagrams)
@@ -28,7 +28,7 @@
     - [References](#references)
     - [Evidence](#evidence)
 
-# Team Names
+## Team Overview
 - **Toan Ly**
     - Major: Computer Science (Mathematics Minor)
     - [lytq@mail.uc.edu](lytq@mail.uc.edu)
@@ -39,9 +39,9 @@
     - [Riverain Technologies](https://www.riveraintech.com/about/)
     - [dwu@riveraintech.com](dwu@riveraintech.com)
 
-Please view the team contract found [here](/docs/Team_Contract.md) for more detailed information.
+Please view the team contract found [here](/docs/Team_Contract.md) for more detailed information on roles/expectations.
 
-# Project Abstract
+## Project Abstract
 MedAssist is an assistive mental health platform powered by a large language
 model (LLM) with retrieval-augmented generation (RAG). It offers a free,
 accessible, and unbiased alternative to mental health care. The system connects
@@ -51,48 +51,50 @@ monitor mood patterns, and track personal growth over time. Alternative
 resources are also provided for users requiring more professional medically-
 focused assistance.
 
-# Project Description
+## Project Description
+This project serves as a way to display our technical accumen, explore the expanding field of artificial intelligence, give back to the community in a meaningful way, and combat a problem everyone can relate with. Mental health care is not always readily available and those suffering may be hesistant to reach out. We seek to provide a free, private alternate that not only provides information on how users can improve but allows them to directly interact and confront their emotions on a daily basis.
+
 [Project Description](/docs/Project_Description.md)
 
 
-# User Stories & Design Diagrams
+## User Stories & Design Diagrams
 
-## User Stories
+### User Stories
 [User Stories](/docs/User_Stories.md)
 
-## Design Diagrams
+### Design Diagrams
 - [Level 0 - General System Overview](/docs/design_diagrams/D0.drawio.png)
 - [Level 1 - Chatbot System Overview](/docs/design_diagrams/D1.png)
 - [Level 2 - Advanced Chatbot Overview](/docs/design_diagrams/D2.png)
 - [Description](/docs/design_diagrams/description.md)
 
-# Project Tasks & Timeline
+## Project Tasks & Timeline
 
-## Task List
+### Task List
 [Task List](/docs/Tasklist.md)
 
-## Timeline
+### Timeline
 [Time Line](/docs/Timeline.md)
 
-## Effort Matrix
+### Effort Matrix
 [Effort Matrix](/docs/Effort_Matrix.md)
 
-# ABET Concerns Essay
+## ABET Concerns Essay
 [ABET Concerns Essay](/docs/Constraint_Essay.md)
 
-# PowerPoint Slideshow
+## PowerPoint Slideshow
 [Presentation Slides](/docs/Fall_Presentation.pdf)
  - [Video Link](https://mailuc-my.sharepoint.com/:v:/g/personal/lindsede_mail_uc_edu/EY_W1q4NiO5OjAhB-rZM2_YBZW0G-4hP9h3HrX1HzfZhKw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=3LddYL&referrer=Outlook.Web&referrerScenario=email-linkwithembed)
 
-# Self-Assessment Essays
+## Self-Assessment Essays
 - [Toan Ly](/docs/essays/Toan_Ly_Individual_Capstone_Assessment.md)
 - [Daniel Lindsey](/docs/essays/Daniel_Lindsey_Individual_Capstone_Assessment.md)
 
-# Professional Biographies
+## Professional Biographies
 - [Toan Ly](/docs/biography/Toan_Ly_Professional_Biography.md)
 - [Daniel Lindsey](/docs/biography/Daniel_Lindsey_Professional_Biography.md)
 
-# Budget
+## Budget
 At this time we currently haven't run into any budgetary costs. As this project progresses we will continually re-evaluate potential future costs and update this section as necessary.
 
 Depending on the final implementation the following may lead to additional costs:
@@ -103,15 +105,15 @@ Depending on the final implementation the following may lead to additional costs
     - Query Processing and Response Output
     - API Expenditure Fees (Call Volume)
 
-# Appendix
+## Appendix
 
-## References
+### References
 
 - [LlamaIndex Docs](https://developers.llamaindex.ai/python/framework/understanding/rag/)
 - [DSM5](https://www.psychiatry.org/psychiatrists/practice/dsm)
 
 
-## Evidence
+### Evidence
 - [Meeting Notes](/docs/Meeting_Notes.md)
 - [Commit History](https://github.com/toan-ly/Senior-Design/commits/main/)
 
