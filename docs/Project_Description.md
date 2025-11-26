@@ -1,12 +1,20 @@
-- Team name: MedAssist
-- Team members:
-    - Toan Ly:
-        - Computer Science (Mathematics Minor)
-        - [lytq@mail.uc.edu](lytq@mail.uc.edu)
-    - Daniel Lindsey:
-        - Computer Science
-        - [lindsede@mail.uc.edu](lindsede@mail.uc.edu)
-- Project topic area:
-    - Health Support System
-    - Retrieval-Augmented Generation (RAG)
-    - LLM
+# MedAssist: An Assist Mental Health Platform
+
+## Team Members
+- **Toan Ly** 
+    - Major: Computer Science
+    - Email: lytq@mail.uc.edu
+    - Phone: 513-328-2923
+- **Daniel Lindsey**
+    - Major: Computer Science
+    - Email: lindsede@mail.uc.edu
+    - Phone: 513-351-3707
+
+## Advisor
+- **Dr. Dennis Wu**  
+  - Email: dwu@riveraintech.com
+
+## Project Topic Area:
+- Mental Health Support System
+- Retrieval-Augmented Generation (RAG)
+- LLM
