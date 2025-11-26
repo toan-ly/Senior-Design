@@ -110,7 +110,8 @@ Depending on the final implementation the following may lead to additional costs
 - [LlamaIndex Docs](https://developers.llamaindex.ai/python/framework/understanding/rag/)
 - [DSM5](https://www.psychiatry.org/psychiatrists/practice/dsm)
 
-## [Meeting Notes](/docs/Meeting_Notes.md)
 
 ## Evidence
-Task Breakdown by hour:
+- [Meeting Notes](/docs/Meeting_Notes.md)
+- [Commit History](https://github.com/toan-ly/Senior-Design/commits/main/)
+
