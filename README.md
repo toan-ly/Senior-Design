@@ -1,4 +1,4 @@
-# MedAssist: An Assistive Mental Health Platform
+# **MedAssist: An Assistive Mental Health Platform**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![LlamaIndex](https://img.shields.io/badge/LlamaIndex-RAG-orange)
@@ -109,3 +109,8 @@ Depending on the final implementation the following may lead to additional costs
 
 - [LlamaIndex Docs](https://developers.llamaindex.ai/python/framework/understanding/rag/)
 - [DSM5](https://www.psychiatry.org/psychiatrists/practice/dsm)
+
+## [Meeting Notes](/docs/Meeting_Notes.md)
+
+## Evidence
+Task Breakdown by hour:
