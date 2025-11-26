@@ -115,5 +115,6 @@ Depending on the final implementation the following may lead to additional costs
 
 ### Evidence
 - [Meeting Notes](/docs/Meeting_Notes.md)
+- [Hour Breakdown/Overview](/docs/Hour_Overview.md)
 - [Commit History](https://github.com/toan-ly/Senior-Design/commits/main/)
 
