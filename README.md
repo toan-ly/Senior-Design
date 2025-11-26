@@ -1,5 +1,12 @@
 # MedAssist: An Assistive Mental Health Platform
 
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![LlamaIndex](https://img.shields.io/badge/LlamaIndex-RAG-orange)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?logo=chainlink&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-Gray?logo=openai&logoColor=white&color=555555)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
 
 # Table of Contents
 - [Team Names](#team-names)
