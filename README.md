@@ -1,7 +1,7 @@
-# MedAssist
+# MedAssist: An Assistive Mental Health Platform
 
 
-# Table of Content
+# Table of Contents
 - [Team Names](#team-names)
 - [Project Abstract](#project-abstract) 
 - [Project Description](#project-description) 
@@ -11,9 +11,9 @@
 - [Project Tasks & Timeline](#project-tasks--timeline)
     - [Task List](#task-list)
     - [Timeline](#timeline)
-    - [Effor Matrix](#effort-matrix)
+    - [Effort Matrix](#effort-matrix)
 - [ABET Concerns Essay](#abet-concerns-essay)
-- [PPT Slideshow](#ppt-slideshow)
+- [PowerPoint Slideshow](#powerpoint-slideshow)
 - [Self-Assessment Essays](#self-assessment-essays)
 - [Professional Biographies](#professional-biographies)
 - [Budget](#budget)
@@ -23,8 +23,16 @@
 
 # Team Names
 - **Toan Ly**
+    - Major: Computer Science (Mathematics Minor)
+    - [lytq@mail.uc.edu](lytq@mail.uc.edu)
 - **Daniel Lindsey**
+    - Major: Computer Science
+    - [lindsede@mail.uc.edu](lindsede@mail.uc.edu)
 - **Advisor:** Dr. Dennis Wu
+    - [Riverain Technologies](https://www.riveraintech.com/about/)
+    - [dwu@riveraintech.com](dwu@riveraintech.com)
+
+Please view the team contract found [here](/docs/Team_Contract.md) for more detailed information.
 
 # Project Abstract
 MedAssist is an assistive mental health platform powered by a large language
@@ -65,8 +73,9 @@ focused assistance.
 # ABET Concerns Essay
 [ABET Concerns Essay](/docs/Constraint_Essay.md)
 
-# PPT Slideshow
+# PowerPoint Slideshow
 [Presentation Slides](/docs/Fall_Presentation.pdf)
+ - [Video Link](https://mailuc-my.sharepoint.com/:v:/g/personal/lindsede_mail_uc_edu/EY_W1q4NiO5OjAhB-rZM2_YBZW0G-4hP9h3HrX1HzfZhKw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=3LddYL&referrer=Outlook.Web&referrerScenario=email-linkwithembed)
 
 # Self-Assessment Essays
 - [Toan Ly](/docs/essays/Toan_Ly_Individual_Capstone_Assessment.md)
@@ -77,6 +86,15 @@ focused assistance.
 - [Daniel Lindsey](/docs/biography/Daniel_Lindsey_Professional_Biography.md)
 
 # Budget
+At this time we currently haven't run into any budgetary costs. As this project progresses we will continually re-evaluate potential future costs and update this section as necessary.
+
+Depending on the final implementation the following may lead to additional costs:
+- Server Costs:
+    - Web Hosting for site
+    - Postgres Database Storage
+- Generative Costs:
+    - Query Processing and Response Output
+    - API Expenditure Fees (Call Volume)
 
 # Appendix
 
