@@ -1,4 +1,4 @@
-# Team Contract Draft
+# Team Contract
 
 ## Team Members
 - **Toan Ly** 
