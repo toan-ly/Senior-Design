@@ -10,6 +10,10 @@
     - Email: lindsede@mail.uc.edu
     - Phone: 513-351-3707
 
+## Advisor
+- **Dr. Dennis Wu**  
+  - Email: dwu@riveraintech.com
+
 ## Project Focus
 Our senior design project, **MedAssist**, will focus on developing a mental health support chatbot using retrieval-augmented generation (RAG) and large language models (LLMs). The chatbot will act as a conversational platform where students and users can share concerns and receive support responses grounded in verified mental health resources rather than generic or unfiltered advice. The project will prioritize accuracy, empathy, and safety, ensuring that the system is both technically robust and user-friendly. MedAssist will be accessible via the web with an SQL database for storing user information.
 
