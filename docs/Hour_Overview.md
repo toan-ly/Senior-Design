@@ -33,29 +33,29 @@
 
 
 # Toan Ly
-## Fall Semester - Grand Total: __ Hours
-### Class Assignments - Total __ Hours
+## Fall Semester - Grand Total: 61 Hours
+### Class Assignments - Total 27 Hours
 | Summarized Task | Time Spent (Hours) |
 |:----------------|:------------------:|
-| Professional Biography |  |
-| Project Description |  |
-| Team Contract |  |
-| Individual Capstone Assessment |  |
-| Design Diagrams |  |
-| Task Lists |  |
-| Milestones, Timeline, Effort Matrix |  |
-| Project Constraints Essay |  |
-| PowerPoint Presentation |  |
-| Peer Reviews |  | 
-| Final Design Report |  |
-| Revisions | |
+| Professional Biography | 1.5 |
+| Project Description | 1 |
+| Team Contract | 2 |
+| Individual Capstone Assessment | 2.5 |
+| Design Diagrams | 5 |
+| Task Lists | 1.5 |
+| Milestones, Timeline, Effort Matrix | 2.5 |
+| Project Constraints Essay | 2 |
+| PowerPoint Presentation | 2.5 |
+| Peer Reviews | 1.5 | 
+| Final Design Report | 3 |
+| Revisions | 2 |
 
 
-### Project Work - Total __ Hours
+### Project Work - Total 34 Hours
 | Summarized Task | Time Spent (Hours) |
 |:----------------|:------------------:|
-| Research AI, LLMs, RAG | |
-| Investigate Possible Data Sources |  |
-| Compile DM5 Information  | |
+| Research AI, LLMs, RAG | 5 |
+| Investigate Possible Data Sources | 3 |
+| Compile DSM5 Information  | 2 |
 | Provide Team Feedback | 2 |
 | Meetings | 22 | 
