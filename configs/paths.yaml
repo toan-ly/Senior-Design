@@ -1,0 +1,10 @@
+data:
+  raw: 
+    # - "data/raw/dsm5_eng.pdf"
+    - 'data/raw/dsm5.docx'
+
+ingestion:
+  cache_file: "data/cache/ingestion_cache.json"
+
+prompts:
+  summary_extract: "prompts/summary_extract.txt"

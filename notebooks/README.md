@@ -1,0 +1,1 @@
+This folder is currently storing basic llama code. I'm trying to explore every feature it has
