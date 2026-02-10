@@ -8,25 +8,23 @@ Users can reflect on past interactionsby creating journal entries, view summarie
 </div>
 
 ## Organization
-<div style="text-align: justify">
-This guide consists of eight main sections: <br> <br>
+This guide consists of eight main sections:
 
-1. <b>Environment Setup</b> section explains how to install dependencies and configure the environment.  
+1. [**Environment**](#environmental-setup-using-uv) Setup section explains how to install dependencies and configure the environment.  
 
-2. <b>Questions/Answers</b> section includes answers to commonly asked questions.
+2. [**Questions/Answers**](#questions-and-answers) section includes answers to commonly asked questions.
 
-3. <b>Chat</b> section explains how to interact with the chatbot, receive responses, view past summaries, and generate a health report.
+3. [**Chat**](#chat) section explains how to interact with the chatbot, receive responses, view past summaries, and generate a health report.
 
-4. <b>Journal</b> section describes how to post entries, review old records, leave reflections, and how to remove them.
+4. [**Journal**](#journal) section describes how to post entries, review old records, leave reflections, and how to remove them.
 
-5. <b>Resources</b> section explains how sources are displayed, why they were selected, and how to visit them.
+5. [**Resources**](#resources) section explains how sources are displayed, why they were selected, and how to visit them.
 
-6. <b>Feedback</b> section instructs users on how to leave feedback and ask questions to system administrators. 
+6. [**Feedback**](#feedback) section instructs users on how to leave feedback and ask questions to system administrators. 
 
-7. <b>Mail</b> section shows users how to check their inbox for system messages or for responses to their feedback submissions.
+7. [**Mail**](#mail) section shows users how to check their inbox for system messages or for responses to their feedback submissions.
 
-8. <b>Account Settings</b> section describes the variety of account settings users can change and how to change them.
-</div>
+8. [**Account Settings**](#account-settings) section describes the variety of account settings users can change and how to change them.
 
 ## Environmental Setup (Using `uv`)
 
