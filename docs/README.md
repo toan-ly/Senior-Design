@@ -10,7 +10,7 @@ Users can reflect on past interactionsby creating journal entries, view summarie
 ## Organization
 This guide consists of eight main sections:
 
-1. [**Environment**](#environmental-setup-using-uv) Setup section explains how to install dependencies and configure the environment.  
+1. [**Environment Setup**](#environmental-setup-using-uv) section explains how to install dependencies and configure the environment.  
 
 2. [**Questions/Answers**](#questions-and-answers) section includes answers to commonly asked questions.
 
