@@ -1,11 +1,6 @@
 from pathlib import Path
 from typing import Optional
 
-import os
-import openai
-import yaml
-from dotenv import load_dotenv
-
 from llama_index.core import SimpleDirectoryReader, Settings
 from llama_index.core.ingestion import IngestionPipeline, IngestionCache
 from llama_index.core.node_parser import TokenTextSplitter
@@ -13,24 +8,7 @@ from llama_index.core.extractors import SummaryExtractor
 from llama_index.embeddings.openai import OpenAIEmbedding
 from llama_index.llms.openai import OpenAI
 
-
-def load_paths_config(
-    path: str = "configs/paths.yaml",
-):
-    cfg_path = Path(path)
-    if not cfg_path.exists():
-        raise FileNotFoundError(f"Missing config file: {path}")
-    return yaml.safe_load(cfg_path.read_text(encoding="utf-8"))
-
-
-def setup_env(
-    env_path: str = "configs/secrets.env",
-):
-    load_dotenv(env_path)
-    api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key:
-        raise RuntimeError("OPENAI_API_KEY not found!")
-    openai.api_key = api_key
+from src.utils.setup_config import load_paths_config, setup_openai
 
 
 def load_prompt(
@@ -86,7 +64,7 @@ def ingest_docs(
     env_path: str = "configs/secrets.env",
 ):
     cfg = load_paths_config(paths_config)
-    setup_env(env_path)
+    setup_openai(env_path)
 
     # LLM config
     Settings.llm = OpenAI(model="gpt-4o-mini", temperature=0.2)

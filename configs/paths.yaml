@@ -6,5 +6,8 @@ data:
 ingestion:
   cache_file: "data/cache/ingestion_cache.json"
 
+storage:
+  index_store: "data/index_store"
+
 prompts:
   summary_extract: "prompts/summary_extract.txt"
