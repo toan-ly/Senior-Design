@@ -1,7 +1,7 @@
 data:
   raw: 
-    # - "data/raw/dsm5_eng.pdf"
-    - "data/raw/dsm5_vn.docx"
+    - "data/raw/dsm5_eng.pdf"
+    # - "data/raw/dsm5_vn.docx"
     # - 'data/raw/dsm5.docx'
 
 ingestion:
