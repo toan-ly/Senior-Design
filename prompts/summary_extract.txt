@@ -1,1 +1,6 @@
-Placeholder
+Here is the content of the section:
+{content_str}
+
+Summarize the key topics and entities of the section.
+
+Summary: 
