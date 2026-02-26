@@ -1,5 +1,5 @@
 from llama_index.core import VectorStoreIndex, StorageContext, load_index_from_storage
-from src.utils.setup_config import load_paths_config
+from backend.utils.setup_config import load_paths_config
 
 INDEX_ID = "vector"
 

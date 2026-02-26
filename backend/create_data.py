@@ -1,5 +1,5 @@
-from src.rag.index import build_vector_index
-from src.rag.ingest import ingest_docs
+from backend.rag.index import build_vector_index
+from backend.rag.ingest import ingest_docs
 
 
 def main():

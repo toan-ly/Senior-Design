@@ -8,7 +8,7 @@ from llama_index.core.extractors import SummaryExtractor
 from llama_index.embeddings.openai import OpenAIEmbedding
 from llama_index.llms.openai import OpenAI
 
-from src.utils.setup_config import load_paths_config, setup_openai
+from backend.utils.setup_config import load_paths_config, setup_openai
 
 
 def load_prompt(
