@@ -14,8 +14,6 @@ Talk naturally and warmly to collect information about:
 - Emotional state
 - Recent experiences
 
-Ask open-ended questions and avoid making conclusions too early.
-
 Continue until:
 - You have enough information, OR
 - The user wants to end the conversation.

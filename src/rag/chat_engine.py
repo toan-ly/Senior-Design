@@ -156,3 +156,17 @@ def build_agent(
 def chat_once(agent, message: str) -> str:
     response = agent.chat(message)
     return str(response)
+
+
+def main():
+    # Example usage
+    agent = build_agent(
+        username="Toan Ly",
+        user_info="5th year CS student at UC",
+    )
+    message = "I feel stressed of money and school. What should I do?"
+    print(chat_once(agent, message))
+
+
+if __name__ == "__main__":
+    main()
