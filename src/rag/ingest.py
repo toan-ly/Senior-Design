@@ -48,10 +48,7 @@ def build_pipeline(
     pipeline = IngestionPipeline(
         transformations=[
             TokenTextSplitter(chunk_size=512, chunk_overlap=20),
-            SummaryExtractor(
-                summaries=["self"],
-                # prompt_template=summary_prompt
-            ),
+            SummaryExtractor(summaries=["self"], prompt_template=summary_prompt),
             OpenAIEmbedding(),
         ],
         cache=cache,

@@ -11,3 +11,8 @@ storage:
 
 prompts:
   summary_extract: "prompts/summary_extract.txt"
+  agent_system_template: "prompts/agent_system_template.txt"
+
+chat:
+  conversation_file: "data/cache/conversations.json"
+  scores_file: "data/scores/scores.json"
