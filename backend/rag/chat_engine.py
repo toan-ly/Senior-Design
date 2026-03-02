@@ -8,7 +8,7 @@ from llama_index.core.storage.chat_store import SimpleChatStore
 from llama_index.core.tools import QueryEngineTool, ToolMetadata, FunctionTool
 from llama_index.agent.openai import OpenAIAgent
 
-from backend.utils.setup_config import load_paths_config, setup_openai
+from backend.utils.setup_config import load_yaml, setup_openai
 
 
 def _read_json_file(file_path: str):
@@ -117,7 +117,7 @@ def build_agent(
     token_limit: int = 3000,
     top_k: int = 3,
 ):
-    cfg = load_paths_config(paths_config)
+    cfg = load_yaml(paths_config)
     setup_openai(env_path)
 
     conversation_file = cfg["chat"]["conversation_file"]

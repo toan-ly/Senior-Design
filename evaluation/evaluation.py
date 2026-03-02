@@ -16,12 +16,13 @@ from llama_index.core.evaluation import (
 from llama_index.core.llama_dataset.generator import RagDatasetGenerator
 from llama_index.llms.openai import OpenAI
 
-from backend.utils.setup_config import setup_openai
+from backend.utils.setup_config import setup_openai, load_config
 from backend.rag.index import build_vector_index
 from backend.rag.ingest import ingest_docs
 
 
 CONFIG_PATH = "configs/paths.yaml"
+RAG_CONFIG_PATH = "configs/dev.yaml"
 ENV_PATH = "configs/secrets.env"
 
 
@@ -102,13 +103,16 @@ def main():
     nest_asyncio.apply()
 
     # Config setup
-    # cfg = load_paths_config(CONFIG_PATH)
+    cfg = load_config(CONFIG_PATH, RAG_CONFIG_PATH)
     setup_openai(ENV_PATH)
-    Settings.llm = OpenAI(model="gpt-4o-mini", temperature=0.2)
+    Settings.llm = OpenAI(
+        model=cfg["llm"]["model"], temperature=cfg["llm"]["temperature"]
+    )
 
     # Ingest
     nodes = ingest_docs(
         paths_config=CONFIG_PATH,
+        rag_config=RAG_CONFIG_PATH,
         env_path=ENV_PATH,
     )
 

@@ -1,11 +1,11 @@
 from llama_index.core import VectorStoreIndex, StorageContext, load_index_from_storage
-from backend.utils.setup_config import load_paths_config
+from backend.utils.setup_config import load_yaml
 
 INDEX_ID = "vector"
 
 
 def build_vector_index(nodes, paths_config="configs/paths.yaml"):
-    cfg = load_paths_config(paths_config)
+    cfg = load_yaml(paths_config)
     index_store_path = cfg["storage"]["index_store"]
     try:
         storage_context = StorageContext.from_defaults(persist_dir=index_store_path)

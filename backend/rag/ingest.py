@@ -8,7 +8,7 @@ from llama_index.core.extractors import SummaryExtractor
 from llama_index.embeddings.openai import OpenAIEmbedding
 from llama_index.llms.openai import OpenAI
 
-from backend.utils.setup_config import load_paths_config, setup_openai
+from backend.utils.setup_config import load_config, setup_openai
 
 
 def load_prompt(
@@ -44,10 +44,12 @@ def persist_cache(
 def build_pipeline(
     summary_prompt: str,
     cache: Optional[IngestionCache],
+    chunk_size: int = 512,
+    chunk_overlap: int = 20,
 ) -> IngestionPipeline:
     pipeline = IngestionPipeline(
         transformations=[
-            TokenTextSplitter(chunk_size=512, chunk_overlap=20),
+            TokenTextSplitter(chunk_size=chunk_size, chunk_overlap=chunk_overlap),
             SummaryExtractor(summaries=["self"], prompt_template=summary_prompt),
             OpenAIEmbedding(),
         ],
@@ -58,17 +60,23 @@ def build_pipeline(
 
 def ingest_docs(
     paths_config: str = "configs/paths.yaml",
+    rag_config: str = "configs/dev.yaml",
     env_path: str = "configs/secrets.env",
 ):
-    cfg = load_paths_config(paths_config)
+    cfg = load_config(paths_file=paths_config, rag_config_file=rag_config)
     setup_openai(env_path)
 
     # LLM config
-    Settings.llm = OpenAI(model="gpt-4o-mini", temperature=0.2)
+    Settings.llm = OpenAI(
+        model=cfg["llm"]["model"], temperature=cfg["llm"]["temperature"]
+    )
 
     input_files = cfg["data"]["raw"]
     cache_file = cfg["ingestion"]["cache_file"]
     summary_prompt_path = cfg["prompts"]["summary_extract"]
+
+    chunk_size = cfg["chunking"]["chunk_size"]
+    chunk_overlap = cfg["chunking"]["chunk_overlap"]
 
     # Load docs
     docs = SimpleDirectoryReader(
@@ -87,7 +95,9 @@ def ingest_docs(
     cache = load_cache(cache_file)
 
     # Run ingestion pipeline
-    pipeline = build_pipeline(summary_prompt, cache)
+    pipeline = build_pipeline(
+        summary_prompt, cache, chunk_size=chunk_size, chunk_overlap=chunk_overlap
+    )
     nodes = pipeline.run(documents=docs)
     persist_cache(pipeline, cache_file)
 
