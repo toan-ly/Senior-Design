@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from backend.app.schemas.chat import ChatRequest, ChatResponse
-from backend.app.deps import run_chat
+from backend.app.core.chat_service import run_chat
 
 router = APIRouter(tags=["chat"])
 

@@ -10,6 +10,14 @@ from llama_index.agent.openai import OpenAIAgent
 
 from backend.utils.setup_config import load_yaml, setup_openai
 
+from qdrant_client import QdrantClient
+from llama_index.vector_stores.qdrant import QdrantVectorStore
+from llama_index.core import VectorStoreIndex
+
+from backend.app.db.session import get_db
+from backend.app.models.score import Score as ScoreModel
+from backend.app.models.user import User as UserModel
+
 
 def _read_json_file(file_path: str):
     p = Path(file_path)
@@ -44,8 +52,32 @@ def save_score(
     scores_file: str,
 ):
     """
-    Save score record to JSON file
+    Save score record to Postgres (preferred), with a JSON fallback.
     """
+    # 1) Try to persist to Postgres first.
+    db = get_db()
+    try:
+        user = db.query(UserModel).filter(UserModel.username == username).first()
+        if user:
+            db_score = ScoreModel(
+                user_id=user.id,
+                score=str(score),
+                content=content,
+                total_guess=str(total_guess),
+            )
+            db.add(db_score)
+            db.commit()
+            db.refresh(db_score)
+            print(f"💾 Score saved to Postgres for user '{username}'")
+            return
+        print(f"⚠️ No user '{username}' found; skipping Postgres score save")
+    except Exception as exc:
+        # If Postgres is misconfigured (e.g., tables missing), fall back.
+        print(f"⚠️ DB score save failed: {exc}. Falling back to JSON.")
+    finally:
+        db.close()
+
+    # 2) JSON fallback (keeps your existing behavior working in dev).
     entry = {
         "username": username,
         "time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
@@ -122,8 +154,10 @@ def build_agent(
 
     conversation_file = cfg["chat"]["conversation_file"]
     scores_file = cfg["chat"]["scores_file"]
-    index_file = cfg["storage"]["index_store"]
     system_prompt_path = cfg["prompts"]["agent_system_template"]
+
+    storage_cfg = cfg["storage"]
+    backend = storage_cfg.get("backend", "local")
 
     # Load conversation history
     chat_store = load_conversation_history(conversation_file)
@@ -133,9 +167,26 @@ def build_agent(
         chat_store_key=username,
     )
 
-    # Load vector index
-    storage_context = StorageContext.from_defaults(persist_dir=index_file)
-    index = load_index_from_storage(storage_context=storage_context, index_id="vector")
+    if backend == "qdrant":
+        # Qdrant index
+        host = storage_cfg.get("host", "localhost")
+        port = storage_cfg.get("port", 6333)
+        collection_name = storage_cfg.get("collection_name", "mental_health_docs")
+
+        client = QdrantClient(host=host, port=port)
+        vector_store = QdrantVectorStore(client=client, collection_name=collection_name)
+        storage_context = StorageContext.from_defaults(vector_store=vector_store)
+        index = VectorStoreIndex.from_vector_store(
+            vector_store=vector_store,
+            storage_context=storage_context,
+        )
+    else:
+        # Fallback: local index
+        index_file = cfg["storage"]["index_store"]
+        storage_context = StorageContext.from_defaults(persist_dir=index_file)
+        index = load_index_from_storage(
+            storage_context=storage_context, index_id="vector"
+        )
 
     # Tools
     dsm5_tool = build_dsm5_tool(index, top_k=top_k)
