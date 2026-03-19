@@ -18,6 +18,8 @@ from backend.app.db.session import get_db
 from backend.app.models.score import Score as ScoreModel
 from backend.app.models.user import User as UserModel
 
+from backend.app.db.session import SessionLocal
+
 
 def _read_json_file(file_path: str):
     p = Path(file_path)
@@ -54,8 +56,7 @@ def save_score(
     """
     Save score record to Postgres (preferred), with a JSON fallback.
     """
-    # 1) Try to persist to Postgres first.
-    db = get_db()
+    db = SessionLocal()
     try:
         user = db.query(UserModel).filter(UserModel.username == username).first()
         if user:

@@ -9,10 +9,11 @@ def sidebar():
         st.markdown(
             """
             1. Log into your account  
-            2. Open **Chat** and talk to MedAssist  
-            3. MedAssist will assess your condition when enough information is collected  
-            4. Review your history in **Health Tracker**
-            5. Write your journal in **Journal**
+            2. Open **Chat** and talk to the MedAssist chatbot
+            3. MedAssist will generate an opinion of your condition when enough information has been collected
+            4. Review your history in the **Health Tracker**
+            5. Write personal journal entries in the **Journal**
+            6. Visit other **Resources** for professional help
             """
         )
 

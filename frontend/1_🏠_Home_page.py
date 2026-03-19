@@ -20,9 +20,9 @@ st.markdown(
     Use the sidebar to:
     - log in or create an account
     - chat with the AI assistant
-    - review your mental health records
-    - track your recent status
-    - write your journal
+    - track your health report
+    - write personal journal entries
+    - visit other resources for professional help
     """
 )
 
