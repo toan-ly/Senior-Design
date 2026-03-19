@@ -1,6 +1,7 @@
 import streamlit as st
 
 from components.sidebar import sidebar
+from components.footer import footer
 from utils.api import get_current_user, login_user, register_user
 
 
@@ -33,7 +34,7 @@ with login_tab:
     username = st.text_input("Username", key="login_username").strip()
     password = st.text_input("Password", type="password", key="login_password")
 
-    if st.button("Login", use_container_width=True, key="login_button"):
+    if st.button("Login", width="stretch", key="login_button"):
         if not username or not password:
             st.error("Please enter both username and password.")
         else:
@@ -66,7 +67,7 @@ with signup_tab:
         "Confirm Password", type="password", key="signup_password_confirm"
     )
 
-    if st.button("Create Account", use_container_width=True, key="signup_button"):
+    if st.button("Create Account", width="stretch", key="signup_button"):
         if not su_username or not su_password:
             st.error("Username and password are required.")
         elif su_password != su_password_confirm:
@@ -104,9 +105,12 @@ with guest_tab:
     st.subheader("Continue as Guest")
     st.markdown("Use the application without creating an account.")
 
-    if st.button("Continue as Guest", use_container_width=True, key="guest_button"):
+    if st.button("Continue as Guest", width="stretch", key="guest_button"):
         st.session_state.logged_in = True
         st.session_state.username = "Guest"
         st.session_state.user_info = "username: Guest, information: not provided"
         st.session_state.access_token = None
         st.rerun()
+
+
+footer()

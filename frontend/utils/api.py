@@ -92,3 +92,50 @@ def get_scores(
     )
     response.raise_for_status()
     return response.json()
+
+
+def get_journal_month(
+    username: str,
+    month: str,
+    access_token: Optional[str] = None,
+) -> Any:
+    headers: Dict[str, str] = {}
+    if access_token:
+        headers["Authorization"] = f"Bearer {access_token}"
+
+    response = requests.get(
+        f"{API_BASE}/v1/journal/month",
+        params={"username": username, "month": month},
+        headers=headers or None,
+        timeout=30,
+    )
+    response.raise_for_status()
+    return response.json()
+
+
+def upsert_journal_entry(
+    username: str,
+    date: str,
+    mood: str,
+    journal_text: str,
+    reflection_text: Optional[str] = None,
+    access_token: Optional[str] = None,
+) -> Any:
+    headers: Dict[str, str] = {}
+    if access_token:
+        headers["Authorization"] = f"Bearer {access_token}"
+
+    response = requests.post(
+        f"{API_BASE}/v1/journal/entry",
+        json={
+            "username": username,
+            "date": date,
+            "mood": mood,
+            "journal_text": journal_text,
+            "reflection_text": reflection_text,
+        },
+        headers=headers or None,
+        timeout=30,
+    )
+    response.raise_for_status()
+    return response.json()

@@ -21,7 +21,7 @@ def sidebar():
         if st.session_state.get("logged_in", False):
             st.success(f"Logged in as **{st.session_state.get('username', 'User')}**")
 
-            if st.button("Logout", use_container_width=True):
+            if st.button("Logout", width="stretch"):
                 st.session_state.logged_in = False
                 st.session_state.username = None
                 st.session_state.user_info = None

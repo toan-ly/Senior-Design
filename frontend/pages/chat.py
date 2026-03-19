@@ -1,6 +1,7 @@
 import streamlit as st
 
 from components.auth_guard import require_login
+from components.footer import footer
 from components.sidebar import sidebar
 from utils.api import send_chat_message
 

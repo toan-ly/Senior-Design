@@ -2,7 +2,6 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# Only copy frontend code
 COPY frontend /app/frontend
 
 RUN pip install --no-cache-dir -U pip \

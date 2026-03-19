@@ -1,6 +1,7 @@
 import streamlit as st
 from components.sidebar import sidebar
 from components.auth_guard import require_login
+from components.footer import footer
 
 st.set_page_config(
     page_title="MedAssist",
@@ -23,3 +24,5 @@ st.markdown(
     - track your recent status
     """
 )
+
+footer()
