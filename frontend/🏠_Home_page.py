@@ -22,6 +22,7 @@ st.markdown(
     - chat with the AI assistant
     - review your mental health records
     - track your recent status
+    - write your journal
     """
 )
 

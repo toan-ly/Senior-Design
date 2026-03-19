@@ -12,6 +12,7 @@ def sidebar():
             2. Open **Chat** and talk to MedAssist  
             3. MedAssist will assess your condition when enough information is collected  
             4. Review your history in **Health Tracker**
+            5. Write your journal in **Journal**
             """
         )
 

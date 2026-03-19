@@ -12,7 +12,7 @@ backend:
 	uvicorn backend.app.main:app --reload --port 8000
 
 frontend:
-	streamlit run frontend/streamlit_app.py
+	streamlit run frontend/🏠_Home_page.py
 
 run:
 	uvicorn backend.app.main:app --reload --port 8000 & \
