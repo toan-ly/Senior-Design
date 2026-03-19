@@ -3,6 +3,10 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+.cursor/
+.cursorignore
+qdrant_storage/
+
 .DS_Store
 data/
 evaluation/results/

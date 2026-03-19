@@ -1,8 +1,8 @@
 data:
   raw: 
     # - "data/raw/dsm5_eng.pdf"
-    - "data/raw/dsm5_eng.md"
-    # - "data/raw/dsm5_vn.docx"
+    # - "data/raw/dsm5_eng.md"
+    - "data/raw/dsm5_vn.docx"
     # - 'data/raw/dsm5.docx'
 
 ingestion:
@@ -10,6 +10,10 @@ ingestion:
 
 storage:
   index_store: "data/index_store"
+  backend: "qdrant"
+  collection_name: "mental_health_docs"
+  host: "qdrant"
+  port: 6333
 
 prompts:
   summary_extract: "prompts/summary_extract.txt"
@@ -18,3 +22,5 @@ prompts:
 chat:
   conversation_file: "data/cache/conversations.json"
   scores_file: "data/scores/scores.json"
+
+

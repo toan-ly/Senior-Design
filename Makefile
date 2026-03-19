@@ -1,13 +1,25 @@
-
-
 ### Pre-commit
 precommit:
 	pre-commit run --all-files
 
-### Docker
-docker-build:
-	docker build -t mental-health-assistant .
 
-docker-run:
-	docker run -d -p 8000:8000 mental-health-assistant
+### Requirements
+backend-req-export:
+	uv pip compile pyproject.toml --output-file backend/requirements.txt --no-deps
 
+### Development
+backend:		
+	uvicorn backend.app.main:app --reload --port 8000
+
+frontend:
+	streamlit run frontend/streamlit_app.py
+
+run:
+	uvicorn backend.app.main:app --reload --port 8000 & \
+	streamlit run frontend/app.py
+
+docker-up:
+	docker compose up --build
+
+docker-down:
+	docker compose down

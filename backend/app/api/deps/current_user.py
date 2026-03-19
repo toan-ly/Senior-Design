@@ -22,7 +22,7 @@ def get_current_user(
 
     try:
         payload = decode_token(token)
-        username: str | None = payload.get("sub")  # type: ignore[assignment]
+        username: str | None = payload.get("sub")
         if username is None:
             raise credentials_exception
     except Exception:

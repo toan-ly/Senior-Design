@@ -1,29 +1,29 @@
 repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.12.9
+    rev: v0.15.6
     hooks:
       - id: ruff-format
         name: "🐍 python · Format with Ruff"
 
       - id: ruff
         name: "🐍 python · Lint with Ruff"
-        args: [--fix]
+        args: [--fix, --extend-ignore=F401]
       
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.28.0
+    rev: v8.30.1
     hooks:
     - id: gitleaks
       name: "🔒 security · Detect hardcoded secrets"
 
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
-    rev: v9.22.0
+    rev: v9.24.0
     hooks:
     - id: commitlint
       name: "✏️ git · Lint commit messages"
       stages: [commit-msg]
 
   - repo: https://github.com/kynan/nbstripout
-    rev: 0.8.1
+    rev: 0.9.1
     hooks:
       - id: nbstripout
         name: "📓 notebook · Strip output from Jupyter notebooks"

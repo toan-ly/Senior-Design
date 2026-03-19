@@ -6,6 +6,9 @@ from backend.app.api.v1.health import router as health_router
 from backend.app.api.v1.auth import router as auth_router
 from backend.app.api.v1.scores import router as scores_router
 from backend.app.db.session import Base, engine
+from backend.app.models.user import User as UserModel  # noqa: F401
+from backend.app.models.score import Score as ScoreModel  # noqa: F401
+from backend.app.models.message import Message as MessageModel  # noqa: F401
 
 
 def create_app() -> FastAPI:

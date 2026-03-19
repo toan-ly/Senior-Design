@@ -6,8 +6,8 @@ embedding:
   model: "text-embedding-3-small"
 
 chunking:
-  chunk_size: 1000
-  chunk_overlap: 150
+  chunk_size: 512
+  chunk_overlap: 60
 
 retrieval:
   top_k: 3
