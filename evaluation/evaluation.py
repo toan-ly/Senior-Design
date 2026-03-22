@@ -20,6 +20,7 @@ from backend.utils.setup_config import setup_openai, load_config
 from backend.rag.index import build_vector_index
 from backend.rag.ingest import ingest_docs
 
+from llama_index.core.postprocessor import SentenceTransformerRerank
 
 CONFIG_PATH = "configs/paths.yaml"
 RAG_CONFIG_PATH = "configs/dev.yaml"
@@ -121,7 +122,11 @@ def main():
         nodes=nodes,
         paths_config=CONFIG_PATH,
     )
-    query_engine = index.as_query_engine(similarity_top_k=3)
+
+    reranker = SentenceTransformerRerank(
+        model="cross-encoder/ms-marco-MiniLM-L-6-v2", top_n=3
+    )
+    query_engine = index.as_query_engine(similarity_top_k=10, postprocessors=[reranker])
 
     # Generate eval questions
     print("Generating evaluation questions...")

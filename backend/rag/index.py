@@ -7,13 +7,17 @@ from llama_index.vector_stores.qdrant import QdrantVectorStore
 INDEX_ID = "vector"
 
 
-def build_qdrant_storage_context(storage_cfg):
+def build_qdrant_storage_context(storage_cfg, enable_hybrid: bool = False):
     host = storage_cfg.get("host", "localhost")
     port = storage_cfg.get("port", 6333)
     collection_name = storage_cfg.get("collection_name", "mental_health_docs")
 
     client = QdrantClient(host=host, port=port)
-    vector_store = QdrantVectorStore(client=client, collection_name=collection_name)
+    vector_store = QdrantVectorStore(
+        client=client,
+        collection_name=collection_name,
+        enable_hybrid=enable_hybrid,
+    )
     return StorageContext.from_defaults(vector_store=vector_store)
 
 

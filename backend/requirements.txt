@@ -6,6 +6,8 @@ docx2txt==0.8
     # via mental-health-assistant (pyproject.toml)
 fastapi==0.135.1
     # via mental-health-assistant (pyproject.toml)
+fastembed==0.7.4
+    # via mental-health-assistant (pyproject.toml)
 jose==1.0.0
     # via mental-health-assistant (pyproject.toml)
 llama-index-agent-openai==0.4.12
@@ -24,8 +26,6 @@ plotly==5.24.0
     # via mental-health-assistant (pyproject.toml)
 psycopg==3.3.3
     # via mental-health-assistant (pyproject.toml)
-pymupdf-layout==1.27.1
-    # via mental-health-assistant (pyproject.toml)
 pymupdf4llm==0.3.4
     # via mental-health-assistant (pyproject.toml)
 python-jose==3.5.0
@@ -36,11 +36,11 @@ pyyaml==6.0.3
     # via mental-health-assistant (pyproject.toml)
 qdrant-client==1.17.1
     # via mental-health-assistant (pyproject.toml)
+sentence-transformers==5.3.0
+    # via mental-health-assistant (pyproject.toml)
 sqlalchemy==2.0.48
     # via mental-health-assistant (pyproject.toml)
 streamlit==1.38.0
-    # via mental-health-assistant (pyproject.toml)
-transformers==4.40.2
     # via mental-health-assistant (pyproject.toml)
 uvicorn==0.41.0
     # via mental-health-assistant (pyproject.toml)

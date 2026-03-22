@@ -10,4 +10,8 @@ chunking:
   chunk_overlap: 60
 
 retrieval:
-  top_k: 3
+  top_k: 10
+
+reranker:
+  model: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+  top_n: 3

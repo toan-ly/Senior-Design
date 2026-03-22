@@ -2,8 +2,13 @@
 precommit:
 	pre-commit run --all-files
 
+run-qdrant:
+	docker run -p 6333:6333 qdrant/qdrant
 
-### Requirements
+docker-build-data:
+	docker compose run --rm backend python -m scripts.build_data
+
+### Backend Requirements
 backend-req-export:
 	uv pip compile pyproject.toml --output-file backend/requirements.txt --no-deps
 

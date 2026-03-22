@@ -19,6 +19,7 @@ from backend.app.models.score import Score as ScoreModel
 from backend.app.models.user import User as UserModel
 
 from backend.app.db.session import SessionLocal
+from llama_index.core.postprocessor import SentenceTransformerRerank
 
 
 def _read_json_file(file_path: str):
@@ -94,8 +95,28 @@ def save_score(
     print(f"💾 Score saved for user '{username}' in: {scores_file}")
 
 
-def build_dsm5_tool(index, top_k: int = 3):
-    engine = index.as_query_engine(similarity_top_k=top_k)
+def build_dsm5_tool(
+    index,
+    reranker_model: str = "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    reranker_top_k: int = 3,
+    retrieve_k: int = 10,
+    enable_hybrid: bool = False,
+    hybrid_alpha: float = 0.5,
+) -> QueryEngineTool:
+    if enable_hybrid:
+        reranker = SentenceTransformerRerank(model=reranker_model, top_n=reranker_top_k)
+    else:
+        reranker = None
+
+    engine = index.as_query_engine(
+        similarity_top_k=retrieve_k,
+        postprocessors=[reranker],
+    )
+
+    if enable_hybrid:
+        engine.vector_store_query_mode = "hybrid"
+        engine.alpha = hybrid_alpha
+
     tool = QueryEngineTool(
         query_engine=engine,
         metadata=ToolMetadata(
@@ -148,7 +169,10 @@ def build_agent(
     paths_config: str = "configs/paths.yaml",
     env_path: str = "configs/secrets.env",
     token_limit: int = 3000,
-    top_k: int = 3,
+    reranker_top_k: int = 3,
+    retrieve_k: int = 3,
+    enable_hybrid: bool = False,
+    hybrid_alpha: float = 0.5,
 ):
     cfg = load_yaml(paths_config)
     setup_openai(env_path)
@@ -175,7 +199,11 @@ def build_agent(
         collection_name = storage_cfg.get("collection_name", "mental_health_docs")
 
         client = QdrantClient(host=host, port=port)
-        vector_store = QdrantVectorStore(client=client, collection_name=collection_name)
+        vector_store = QdrantVectorStore(
+            client=client,
+            collection_name=collection_name,
+            enable_hybrid=enable_hybrid,
+        )
         storage_context = StorageContext.from_defaults(vector_store=vector_store)
         index = VectorStoreIndex.from_vector_store(
             vector_store=vector_store,
@@ -190,7 +218,13 @@ def build_agent(
         )
 
     # Tools
-    dsm5_tool = build_dsm5_tool(index, top_k=top_k)
+    dsm5_tool = build_dsm5_tool(
+        index,
+        reranker_top_k=reranker_top_k,
+        retrieve_k=retrieve_k,
+        enable_hybrid=enable_hybrid,
+        hybrid_alpha=hybrid_alpha,
+    )
     save_tool = build_save_tool(scores_file=scores_file)
 
     # Agent
