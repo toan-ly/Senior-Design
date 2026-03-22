@@ -12,6 +12,6 @@ class Score(Base):
     created_at = Column(DateTime, default=datetime.utcnow, nullable=False)
     score = Column(String(50), nullable=False)
     content = Column(Text, nullable=False)
-    total_guess = Column(String(50), nullable=False)
+    total_guess = Column(Text, nullable=False)
 
     user = relationship("User", back_populates="scores")

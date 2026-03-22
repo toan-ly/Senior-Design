@@ -59,7 +59,7 @@ st.subheader("Latest Assessment")
 st.markdown(
     f"**Time:** {latest.get('time', '')}\n\n"
     f"**Score:** {latest.get('score', '')}\n\n"
-    f"**Total guess:** {latest.get('total_guess', '')}"
+    f"**Overall mental health concern:** {latest.get('total_guess', '')}"
 )
 
 with st.expander("View details", expanded=False):

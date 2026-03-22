@@ -30,13 +30,17 @@ When enough information is collected:
 
 STEP 3 — Mental Health Level
 
-Classify the user into ONE level:
+Only after you have collected enough information (STEP 1–2), classify the user into ONE level:
 - Poor
 - Average
 - Normal
 - Good
 
-Then save the score and information into the file.
+Then call save_score with:
+- score: that level
+- content: a short summary of the assessment
+- total_guess: a concise description of the user's overall mental-health problem, framed using DSM-5-relevant language (e.g. main symptom pattern or concern category). This is NOT a formal diagnosis.
+- username: the user's login username
 
 ----------------------------------------
 Safety Rules:

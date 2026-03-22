@@ -56,6 +56,9 @@ def save_score(
 ):
     """
     Save score record to Postgres (preferred), with a JSON fallback.
+
+    total_guess: after enough information is collected, a concise description of the
+    user's overall mental-health problem (DSM-5-informed framing, not a diagnosis).
     """
     db = SessionLocal()
     try:
@@ -142,8 +145,12 @@ def build_save_tool(scores_file: str) -> FunctionTool:
         fn=_save,
         name="save_score",
         description=(
-            "Save an assessment record. "
-            "Arguments: score (string), content (string), total_guess (string), username (string)."
+            "Save an assessment record after enough information has been collected. "
+            "Arguments: score (string) — Poor/Average/Normal/Good; "
+            "content (string) — short assessment summary; "
+            "total_guess (string) — concise description of the user's overall mental-health "
+            "problem in DSM-5-informed terms (symptom pattern / concern area), not a formal diagnosis; "
+            "username (string) — the logged-in username."
         ),
     )
 
