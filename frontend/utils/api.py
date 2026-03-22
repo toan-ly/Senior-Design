@@ -48,6 +48,22 @@ def get_current_user(access_token: str) -> Dict[str, Any]:
     return response.json()
 
 
+def get_chat_history(
+    session_id: str,
+    access_token: str,
+    limit: int = 200,
+) -> Dict[str, Any]:
+    """Fetch prior messages for this user + session (requires JWT)."""
+    response = requests.get(
+        f"{API_BASE}/v1/chat/history",
+        params={"session_id": session_id, "limit": limit},
+        headers={"Authorization": f"Bearer {access_token}"},
+        timeout=30,
+    )
+    response.raise_for_status()
+    return response.json()
+
+
 def send_chat_message(
     session_id: str,
     user_info: str,

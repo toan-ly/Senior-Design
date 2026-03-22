@@ -2,7 +2,31 @@ import streamlit as st
 
 from components.sidebar import sidebar
 from components.footer import footer
-from utils.api import get_current_user, login_user, register_user
+from utils.api import get_chat_history, get_current_user, login_user, register_user
+
+
+def _default_chat_messages():
+    return [
+        {
+            "role": "assistant",
+            "content": "Hello! I'm MedAssist. How are you feeling today?",
+        }
+    ]
+
+
+def _load_chat_history_into_session(access_token: str, username: str) -> None:
+    """Restore last conversation from Postgres for this account."""
+    try:
+        data = get_chat_history(session_id=username, access_token=access_token)
+        msgs = data.get("messages") or []
+        st.session_state.messages = (
+            [{"role": m["role"], "content": m["content"]} for m in msgs]
+            if msgs
+            else _default_chat_messages()
+        )
+    except Exception:
+        st.session_state.messages = _default_chat_messages()
+    st.session_state.chat_history_loaded = True
 
 
 st.set_page_config(page_title="Auth", page_icon="🔐", layout="centered")
@@ -51,6 +75,7 @@ with login_tab:
                     f"full_name: {user.get('full_name') or ''}, "
                     f"email: {user.get('email') or ''}"
                 )
+                _load_chat_history_into_session(access_token, user["username"])
                 st.success(f"Welcome back, {user['username']}!")
                 st.rerun()
             except Exception as e:
@@ -95,6 +120,7 @@ with signup_tab:
                     f"full_name: {user.get('full_name') or ''}, "
                     f"email: {user.get('email') or ''}"
                 )
+                _load_chat_history_into_session(access_token, user["username"])
                 st.success("Account created successfully.")
                 st.rerun()
             except Exception as e:
@@ -110,6 +136,8 @@ with guest_tab:
         st.session_state.username = "Guest"
         st.session_state.user_info = "username: Guest, information: not provided"
         st.session_state.access_token = None
+        st.session_state.messages = _default_chat_messages()
+        st.session_state.chat_history_loaded = True
         st.rerun()
 
 

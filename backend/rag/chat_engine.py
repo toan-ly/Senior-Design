@@ -74,12 +74,10 @@ def save_score(
             return
         print(f"⚠️ No user '{username}' found; skipping Postgres score save")
     except Exception as exc:
-        # If Postgres is misconfigured (e.g., tables missing), fall back.
         print(f"⚠️ DB score save failed: {exc}. Falling back to JSON.")
     finally:
         db.close()
 
-    # 2) JSON fallback (keeps your existing behavior working in dev).
     entry = {
         "username": username,
         "time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
@@ -131,10 +129,6 @@ def build_dsm5_tool(
 
 
 def build_save_tool(scores_file: str) -> FunctionTool:
-    """
-    Wrap save_score with scores_file bound in closure so the agent doesn't need to pass it.
-    """
-
     def _save(score: str, content: str, total_guess: str, username: str):
         return save_score(
             score=score,

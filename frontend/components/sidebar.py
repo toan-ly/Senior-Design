@@ -28,6 +28,9 @@ def sidebar():
                 st.session_state.username = None
                 st.session_state.user_info = None
                 st.session_state.access_token = None
+                if "messages" in st.session_state:
+                    del st.session_state.messages
+                st.session_state.chat_history_loaded = False
                 st.rerun()
         else:
             st.warning("Not logged in")

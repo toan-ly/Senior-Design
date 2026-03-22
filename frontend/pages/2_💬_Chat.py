@@ -3,7 +3,7 @@ import streamlit as st
 from components.auth_guard import require_login
 from components.footer import footer
 from components.sidebar import sidebar
-from utils.api import send_chat_message
+from utils.api import get_chat_history, send_chat_message
 
 st.set_page_config(page_title="Chat", page_icon="💬", layout="wide")
 
@@ -13,14 +13,40 @@ require_login()
 st.title("Chat")
 st.write("Welcome to the chat page!")
 
-# Initialize chat history
-if "messages" not in st.session_state:
-    st.session_state.messages = [
+
+def _default_chat_messages():
+    return [
         {
             "role": "assistant",
             "content": "Hello! I'm MedAssist. How are you feeling today?",
         }
     ]
+
+
+# Initialize chat history
+if "messages" not in st.session_state:
+    st.session_state.messages = _default_chat_messages()
+
+# Load from Postgres if logged in with JWT but history not loaded yet
+if (
+    st.session_state.get("logged_in")
+    and st.session_state.get("access_token")
+    and not st.session_state.get("chat_history_loaded", False)
+):
+    username = st.session_state.get("username") or ""
+    try:
+        data = get_chat_history(
+            session_id=username, access_token=st.session_state.access_token
+        )
+        msgs = data.get("messages") or []
+        st.session_state.messages = (
+            [{"role": m["role"], "content": m["content"]} for m in msgs]
+            if msgs
+            else _default_chat_messages()
+        )
+    except Exception:
+        st.session_state.messages = _default_chat_messages()
+    st.session_state.chat_history_loaded = True
 
 # Show message history
 for msg in st.session_state.messages:

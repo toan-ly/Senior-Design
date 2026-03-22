@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any, List
 
 
 class ChatRequest(BaseModel):
@@ -17,3 +17,12 @@ class ChatResponse(BaseModel):
     meta: Dict[str, Any] = Field(
         default_factory=dict, description="Additional metadata about the response"
     )
+
+
+class ChatHistoryMessage(BaseModel):
+    role: str = Field(..., description='"user" or "assistant"')
+    content: str
+
+
+class ChatHistoryResponse(BaseModel):
+    messages: List[ChatHistoryMessage] = Field(default_factory=list)
