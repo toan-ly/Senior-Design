@@ -59,9 +59,24 @@ OPENAI_API_KEY=your_api_key
 Keep this file private and do not share it publicly.
 
 ### Step 4: Run the application
-[Placeholder] 
-Once the project is finalized, this section will be updated
 
+You can run everything with **Docker Compose** 
+
+
+1. From the **repository root**, ensure `configs/secrets.env` exists (Step 3) and that your shell provides the variables referenced in `docker-compose.yml` (at minimum `JWT_SECRET_KEY` and `ACCESS_TOKEN_EXPIRE_MINUTES`; see `configs/secrets.env.example` if you use it as a template).
+
+2. Run this command:
+    ```bash
+    docker compose up --build
+    ```
+
+3. When the stack is healthy:
+
+    - Frontend (Streamlit): http://localhost:8501
+    - Backend (FastAPI): http://localhost:8000
+    - Qdrant dashboard: http://localhost:6333
+
+    Postgres is exposed on host port 55432 (see `docker-compose.yml`) if you need to connect from your machine.
 
 ## Frequently Asked Questions
 <div align="justify">
@@ -78,6 +93,10 @@ Once the project is finalized, this section will be updated
 <b>A:</b> Of course! All account information is completely deleted from our database after being scrambled as soon as a deletion request goes through.
 </div>
 
+## Home Screen
+![MedAssist home screen](demo/home.png)
+
+
 ## Chat
 The Chat section is the primary way users interact with MedAssist. It allows users to ask mental health–related questions and receive responses grounded in DSM-5 material.
 
@@ -91,6 +110,11 @@ MedAssist retrieves relevant DSM-5 content and uses it to generate responses. Us
 - Review key discussion points
 - Generate a health-related report based on previous conversations
 
+![chat](demo/chat.png)
+
+### Health Tracker
+![health track](demo/trend.png)
+
 ## Journal
 The Journal section allows users to record personal reflections related to their mental health journey or past chatbot interactions.
 
@@ -102,12 +126,16 @@ Users can:
 
 Journal entries are intended for personal use only and are not used to diagnose or evaluate users. This feature supports self-reflection and organization of thoughts over time
 
+![journal](demo/journal.png)
+
 ## Resources
 <div align="justify">
 The Resources section offers a variety of third-party options for professional-grade mental health services. Users who are seeking to speak with a psychologist or are having a mental health emergency are heavily urged to use these sources rather than continue to interact with the MedAssist Chatbot. <br><br>
 
 Once users have navigated to the Resources page from the Home screen, they will see a listing of different sources ranked on importance. Each listing features a short summary of the resource, its importance, and a link for users to navigate to its source.
 </div>
+
+![resource](demo/resources.png)
 
 ## Feedback
 <div align="justify">
@@ -129,3 +157,5 @@ The Account Settings page lets user modify several aspects of their account. Use
 
 Settings can be accessed via the 'Account' icon on the top left of the navbar. Once clicked a drop-down page will appear along with a listing of each of the settings described above.
 </div>
+
+![login](demo/login.png)
