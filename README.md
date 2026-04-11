@@ -104,12 +104,12 @@ This project serves as a way to display our technical accumen, explore the expan
 ## Assessment Essays
 
 ### Individual Assessments
-- [Toan Ly](/docs/Fall25/Toan_Ly_Individual_Capstone_Assessment.md)
-- [Daniel Lindsey](/docs/Fall25/Daniel_Lindsey_Individual_Capstone_Assessment.md)
+- [Toan Ly](/docs/assessments/Fall25/Toan_Ly_Individual_Capstone_Assessment.md)
+- [Daniel Lindsey](/docs/assessments/Fall25/Daniel_Lindsey_Individual_Capstone_Assessment.md)
 
 ### Self Assessments
-- [Toan Ly](/docs/Spring26/Toan_Ly_Self_Assessment.md)
-- [Daniel Lindsey](/docs/Spring26/Daniel_Lindsey_Self_Assessment.md)
+- [Toan Ly](/docs/assessments/Spring26/Toan_Ly_Self_Assessment.md)
+- [Daniel Lindsey](/docs/assessments/Spring26/Daniel_Lindsey_Self_Assessment.md)
 
 ## Professional Biographies
 - [Toan Ly](/docs/biography/Toan_Ly_Professional_Biography.md)
