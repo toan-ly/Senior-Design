@@ -124,11 +124,11 @@ This project serves as a way to display our technical accumen, explore the expan
 
 ## Assessment Essays
 
-### Individual Assessments
+### Initial Self-Assessments (Fall)
 - [Toan Ly](/docs/assessments/Fall25/Toan_Ly_Individual_Capstone_Assessment.md)
 - [Daniel Lindsey](/docs/assessments/Fall25/Daniel_Lindsey_Individual_Capstone_Assessment.md)
 
-### Self Assessments
+### Final Self-Assessments (Spring)
 - [Toan Ly](/docs/assessments/Spring26/Toan_Ly_Self_Assessment.md)
 - [Daniel Lindsey](/docs/assessments/Spring26/Daniel_Lindsey_Self_Assessment.md)
 
