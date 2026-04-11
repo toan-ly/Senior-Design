@@ -8,6 +8,8 @@
 | Spring semester | 92 |
 | **Total** | **153** |
 
+## Justification
+
 Fall consisted of **27 hours** of course deliverables (documentation, diagrams, presentations, reports, peer review) and **34 hours** of early project work, including research on LLMs and RAG, sourcing and organizing DSM-5 reference material, and standing team meetings.
 
 Spring consisted of **15 hours** on course artifacts (test plan, user-facing documentation, slides, poster, self-assessment, and final report) and **77 hours** of technical work on MedAssist.
