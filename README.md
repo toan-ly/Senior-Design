@@ -88,7 +88,7 @@ This project serves as a way to display our technical accumen, explore the expan
 ## Test Plan & Results
 
 ### Test Plan
-[Test Plan](/docs/Test_Plan.pdf)
+[Test Plan](/docs/testing/Test_Plan.pdf)
 
 ### Results
 
@@ -139,11 +139,11 @@ This project serves as a way to display our technical accumen, explore the expan
 ## Summary of Hours and Justification
 
 ### Hours
-[Hour Breakdown/Overview](/docs/Hour_Overview.md)
+[Hour Breakdown/Overview](/docs/project_hours/Hour_Overview.md)
   
 ### Justification
-- [Toan Ly](/docs/biography/Toan_Ly_Professional_Biography.md)
-- [Daniel Lindsey](/docs/biography/Daniel_Lindsey_Professional_Biography.md)
+- [Toan Ly](/docs/project_hours/Toan_Ly_Hours_Justification.md)
+- [Daniel Lindsey](/docs/project_hours/Daniel_Lindsey_Hours_Justification.md)
 
 ## Summary of Expenses
 At this time we currently haven't run into any budgetary costs. As this project progresses we will continually re-evaluate potential future costs and update this section as necessary.
