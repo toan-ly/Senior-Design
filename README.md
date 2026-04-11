@@ -21,6 +21,7 @@
     - [Timeline](#timeline)
     - [Effort Matrix](#effort-matrix)
 - [Test Plan & Results](#test-plan--results)
+- [User Manual](Senior-Design/docs/README.md)
 - [PowerPoint Slideshows](#powerpoint-slideshows)
 - [Expo Poster](#expo-poster)
 - [ABET Concerns Essay](#abet-concerns-essay)
