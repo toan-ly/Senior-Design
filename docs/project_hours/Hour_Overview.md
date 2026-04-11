@@ -106,7 +106,7 @@
 | Meetings | 22 | 
 
 
-## Spring Semester - Grand Total: 
+## Spring Semester - Grand Total: 92
 ### Class Assignments - Total 15 Hours
 | Summarized Task | Time Spent (Hours) |
 |:----------------|:------------------:|
@@ -119,7 +119,7 @@
 | Team Presentation Slides | 2 |
 | Final Design Report | 1.5 |
 
-### Project Work - Total 78 Hours
+### Project Work - Total 77 Hours
 | Summarized Task | Time Spent (Hours) |
 |:----------------|:------------------:|
 | RAG pipeline  | 15 |
