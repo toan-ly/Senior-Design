@@ -107,22 +107,27 @@
 
 
 ## Spring Semester - Grand Total: 
-### Class Assignments - Total ___ Hours
+### Class Assignments - Total 15 Hours
 | Summarized Task | Time Spent (Hours) |
 |:----------------|:------------------:|
-| Test Plan |  |
-| User Docs |  |
-| Presentation Slidedeck |  |
-| Abstract, Poster, and other links |  |
-| Expo Poster |  |
-| Self Assessment |  |
-| Team Presentation Slides |  |
-| Final Design Report | |
+| Test Plan | 2 |
+| User Docs | 2 |
+| Presentation Slidedeck | 1.5 |
+| Abstract, Poster, and other links | 1 |
+| Expo Poster | 3 |
+| Self Assessment | 2 |
+| Team Presentation Slides | 2 |
+| Final Design Report | 1.5 |
 
-### Project Work - Total ____ Hours
+### Project Work - Total 78 Hours
 | Summarized Task | Time Spent (Hours) |
 |:----------------|:------------------:|
-|   |   |
-|   |   |
-|   |   |
+| RAG pipeline  | 15 |
+| Chat agent | 6 |
+| Backend APIs  | 10  |
+| PostgreSQL integration | 5 |
+| Frontend | 7 |
+| Components integration and bugfixes | 5 |
+| RAG Evaluation | 4 |
+| Docker setup | 4 |
 | Meetings | 21 |
