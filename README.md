@@ -94,6 +94,21 @@ This project serves as a way to display our technical accumen, explore the expan
 ## User Manual
 [User Manual/Guide](/docs/README.md)
 
+### Frequently Asked Questions
+<div align="justify">
+<b>Q: Is MedAssist a medical diagnosis tool?</b> <br>
+<b>A:</b> No. MedAssist is an informational platform designed to provide structured mental health information based on DSM-5 materials. It does not diagnose conditions or replace professional care. <br><br>
+  
+<b>Q: What should I do in an emergency?</b> <br>
+<b>A:</b> MedAssist is <b>not</b> intended for emergency use. If you are experiencing a mental health emergency, please contact local emergency services. <br><br>
+
+<b>Q: Does MedAssist store my conversations?</b> <br>
+<b>A:</b> Conversation summaries and user-created content (such as journals or feedback) may be stored to support system features, depending on your settings. <br><br>
+
+<b>Q: Can I remove all my information after deleting my account?</b> <br>
+<b>A:</b> Of course! All account information is completely deleted from our database after being scrambled as soon as a deletion request goes through.
+</div>
+
 ## PowerPoint Slideshows
 [Fall Presentation Slides](/docs/presentations/Fall_Presentation.pdf)
  - [Video Link](https://mailuc-my.sharepoint.com/:v:/g/personal/lindsede_mail_uc_edu/EY_W1q4NiO5OjAhB-rZM2_YBZW0G-4hP9h3HrX1HzfZhKw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=3LddYL&referrer=Outlook.Web&referrerScenario=email-linkwithembed)
