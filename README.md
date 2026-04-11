@@ -90,16 +90,16 @@ This project serves as a way to display our technical accumen, explore the expan
 ### Results
 
 ## PowerPoint Slideshows
-[Fall Presentation Slides](/docs/Fall_Presentation.pdf)
+[Fall Presentation Slides](/docs/presentations/Fall_Presentation.pdf)
  - [Video Link](https://mailuc-my.sharepoint.com/:v:/g/personal/lindsede_mail_uc_edu/EY_W1q4NiO5OjAhB-rZM2_YBZW0G-4hP9h3HrX1HzfZhKw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=3LddYL&referrer=Outlook.Web&referrerScenario=email-linkwithembed)
 
-[Spring Presentation Slides](/docs/Spring_Presentation.pdf)
+[Spring Presentation Slides](/docs/presentations/Spring_Presentation.pdf)
 
 ## Expo Poster
 [Final Poster](/docs/EXPO_Poster.pdf)
 
 ## ABET Concerns Essay
-[ABET Concerns Essay](/docs/Constraint_Essay.md)
+[ABET Concerns Essay](/docs/assessments/Constraint_Essay.md)
 
 ## Assessment Essays
 
