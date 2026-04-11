@@ -166,7 +166,7 @@ Depending on the final implementation the following may lead to additional costs
 
 ### Evidence
 - [Commit History](https://github.com/toan-ly/Senior-Design/commits/main/)
-- [Web Version Repo](https://github.com/Daniel-Lindsey66/MedAssist-Web-Version)
+- [Web Version Repo](https://github.com/Daniel-Lindsey66/MedAssist-Web-Version/)
 - [Fall Meeting Notes](/docs/project_hours/meeting_notes/Fall_Meeting_Notes.md)
 - [Spring Meeting Notes](/docs/project_hours/meeting_notes/Spring_Meeting_Notes.md)
 
