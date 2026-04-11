@@ -51,7 +51,8 @@ Please view the team contract found [here](/docs/Team_Contract.md) for more deta
 MedAssist is an assistive mental health platform powered by a large language model (LLM) with retrieval-augmented generation (RAG). It offers a free, accessible, and unbiased alternative to mental health care. The system connects an LLM to trusted DSM-5 knowledge to give accurate, context-aware responses. Through an interactive chat interface, users are able to express their thoughts, monitor mood patterns, and track personal growth over time. Alternative resources are also provided for users requiring more professional medically-focused assistance.
 
 ## Project Description
-[Project Description](/docs/Project_Description.md)
+[Project Description](/docs/Project_Description.md)    
+  
 This project serves as a way to display our technical accumen, explore the expanding field of artificial intelligence, give back to the community in a meaningful way, and combat a problem everyone can relate with. Mental health care is not always readily available and those suffering may be hesistant to reach out. We seek to provide a free, private alternate that not only provides information on how users can improve but allows them to directly interact and confront their emotions on a daily basis.
 
 ## User Stories & Design Diagrams
@@ -137,6 +138,13 @@ This project serves as a way to display our technical accumen, explore the expan
 
 ## Summary of Hours and Justification
 
+### Hours
+[Hour Breakdown/Overview](/docs/Hour_Overview.md)
+  
+### Justification
+- [Toan Ly](/docs/biography/Toan_Ly_Professional_Biography.md)
+- [Daniel Lindsey](/docs/biography/Daniel_Lindsey_Professional_Biography.md)
+
 ## Summary of Expenses
 At this time we currently haven't run into any budgetary costs. As this project progresses we will continually re-evaluate potential future costs and update this section as necessary.
 
@@ -158,6 +166,6 @@ Depending on the final implementation the following may lead to additional costs
 
 ### Evidence
 - [Meeting Notes](/docs/Meeting_Notes.md)
-- [Hour Breakdown/Overview](/docs/Hour_Overview.md)
 - [Commit History](https://github.com/toan-ly/Senior-Design/commits/main/)
+- [Web Version Repo](https://github.com/Daniel-Lindsey66/MedAssist-Web-Version)
 
