@@ -27,7 +27,7 @@
 - [ABET Concerns Essay](#abet-concerns-essay)
 - [Assessments](#self-assessments)
 - [Professional Biographies](#professional-biographies)
-- [Summary of Hours and Justification](summary-of-hours-and-justification)
+- [Summary of Hours and Justification](#summary-of-hours-and-justification)
 - [Summary of Expenses](#summary-of-expenses)
 - [Appendix](#appendix)
     - [References](#references)
