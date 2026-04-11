@@ -60,10 +60,11 @@ This project serves as a way to display our technical accumen, explore the expan
 [User Stories](/docs/User_Stories.md)
 
 ### Design Diagrams
-- [Level 0 - General System Overview](/docs/design_diagrams/D0.drawio.png)
-- [Level 1 - Chatbot System Overview](/docs/design_diagrams/D1.png)
-- [Level 2 - Advanced Chatbot Overview](/docs/design_diagrams/D2.png)
-- [Description](/docs/design_diagrams/description.md)
+[Diagram Overview](/docs/design_diagrams/description.md)   
+- [Level 0 - General System Overview](/docs/design_diagrams/D0.drawio.png)  
+- [Level 1 - Chatbot System Overview](/docs/design_diagrams/D1.png)  
+- [Level 2 - Advanced Chatbot Overview](/docs/design_diagrams/D2.png)  
+
 
 ## User Interface Specification
 ### Final Interface
