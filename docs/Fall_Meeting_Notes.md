@@ -1,4 +1,4 @@
-# MedAssist Meeting Notes
+# MedAssist Fall Semester Meeting Notes
 
 1. **Meeting Title: Team Formation & Project Topic Discussion**  
    Date: Friday September 5, 2025  
