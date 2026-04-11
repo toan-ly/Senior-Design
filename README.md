@@ -9,23 +9,28 @@
 
 
 ## Table of Contents
-- [Team Names](#team-overview)
+- [Team Overview](#team-overview)
 - [Project Abstract](#project-abstract) 
 - [Project Description](#project-description) 
 - [User Stories & Design Diagrams](#user-stories--design-diagrams)
     - [User Stories](#user-stories)
     - [Design Diagrams](#design-diagrams)
+- [User Interface Specification](#user-interface-specification)
 - [Project Tasks & Timeline](#project-tasks--timeline)
     - [Task List](#task-list)
     - [Timeline](#timeline)
     - [Effort Matrix](#effort-matrix)
+- [Test Plan & Results](#test-plan--results)
+- [PowerPoint Slideshows](#powerpoint-slideshows)
+- [Expo Poster](#expo-poster)
 - [ABET Concerns Essay](#abet-concerns-essay)
-- [PowerPoint Slideshow](#powerpoint-slideshow)
-- [Self-Assessment Essays](#self-assessment-essays)
+- [Assessments](#self-assessments)
 - [Professional Biographies](#professional-biographies)
-- [Budget](#budget)
+- [Summary of Hours and Justification](summary-of-hours-and-justification)
+- [Summary of Expenses](#summary-of-expenses)
 - [Appendix](#appendix)
     - [References](#references)
+    - [Web Version Repo]()
     - [Evidence](#evidence)
 
 ## Team Overview
@@ -42,20 +47,12 @@
 Please view the team contract found [here](/docs/Team_Contract.md) for more detailed information on roles/expectations.
 
 ## Project Abstract
-MedAssist is an assistive mental health platform powered by a large language
-model (LLM) with retrieval-augmented generation (RAG). It offers a free,
-accessible, and unbiased alternative to mental health care. The system connects
-an LLM to trusted DSM-5 knowledge to give accurate, context-aware responses.
-Through an interactive chat interface, users are able to express their thoughts,
-monitor mood patterns, and track personal growth over time. Alternative
-resources are also provided for users requiring more professional medically-
-focused assistance.
+MedAssist is an assistive mental health platform powered by a large language model (LLM) with retrieval-augmented generation (RAG). It offers a free, accessible, and unbiased alternative to mental health care. The system connects an LLM to trusted DSM-5 knowledge to give accurate, context-aware responses. Through an interactive chat interface, users are able to express their thoughts, monitor mood patterns, and track personal growth over time. Alternative resources are also provided for users requiring more professional medically-focused assistance.
 
 ## Project Description
 This project serves as a way to display our technical accumen, explore the expanding field of artificial intelligence, give back to the community in a meaningful way, and combat a problem everyone can relate with. Mental health care is not always readily available and those suffering may be hesistant to reach out. We seek to provide a free, private alternate that not only provides information on how users can improve but allows them to directly interact and confront their emotions on a daily basis.
 
 [Project Description](/docs/Project_Description.md)
-
 
 ## User Stories & Design Diagrams
 
@@ -68,6 +65,13 @@ This project serves as a way to display our technical accumen, explore the expan
 - [Level 2 - Advanced Chatbot Overview](/docs/design_diagrams/D2.png)
 - [Description](/docs/design_diagrams/description.md)
 
+## User Interface Specification
+### Final Interface
+![Final interface](/docs/design_diagrams/poster_design.png)
+
+### Front-End Wireframe (Web Version)
+![Web wireframe](/docs/supporting_documents/Web_Application_Wireframe.drawio.png)
+
 ## Project Tasks & Timeline
 
 ### Task List
@@ -79,22 +83,41 @@ This project serves as a way to display our technical accumen, explore the expan
 ### Effort Matrix
 [Effort Matrix](/docs/Effort_Matrix.md)
 
+## Test Plan & Results
+
+### Test Plan
+
+### Results
+
+## PowerPoint Slideshows
+[Fall Presentation Slides](/docs/Fall_Presentation.pdf)
+ - [Video Link](https://mailuc-my.sharepoint.com/:v:/g/personal/lindsede_mail_uc_edu/EY_W1q4NiO5OjAhB-rZM2_YBZW0G-4hP9h3HrX1HzfZhKw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=3LddYL&referrer=Outlook.Web&referrerScenario=email-linkwithembed)
+
+[Spring Presentation Slides](/docs/Spring_Presentation.pdf)
+
+## Expo Poster
+[Final Poster](/docs/EXPO_Poster.pdf)
+
 ## ABET Concerns Essay
 [ABET Concerns Essay](/docs/Constraint_Essay.md)
 
-## PowerPoint Slideshow
-[Presentation Slides](/docs/Fall_Presentation.pdf)
- - [Video Link](https://mailuc-my.sharepoint.com/:v:/g/personal/lindsede_mail_uc_edu/EY_W1q4NiO5OjAhB-rZM2_YBZW0G-4hP9h3HrX1HzfZhKw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=3LddYL&referrer=Outlook.Web&referrerScenario=email-linkwithembed)
+## Assessment Essays
 
-## Self-Assessment Essays
-- [Toan Ly](/docs/essays/Toan_Ly_Individual_Capstone_Assessment.md)
-- [Daniel Lindsey](/docs/essays/Daniel_Lindsey_Individual_Capstone_Assessment.md)
+### Individual Assessments
+- [Toan Ly](/docs/Fall25/Toan_Ly_Individual_Capstone_Assessment.md)
+- [Daniel Lindsey](/docs/Fall25/Daniel_Lindsey_Individual_Capstone_Assessment.md)
+
+### Self Assessments
+- [Toan Ly](/docs/Spring26/Toan_Ly_Self_Assessment.md)
+- [Daniel Lindsey](/docs/Spring26/Daniel_Lindsey_Self_Assessment.md)
 
 ## Professional Biographies
 - [Toan Ly](/docs/biography/Toan_Ly_Professional_Biography.md)
 - [Daniel Lindsey](/docs/biography/Daniel_Lindsey_Professional_Biography.md)
 
-## Budget
+## Summary of Hours and Justification
+
+## Summary of Expenses
 At this time we currently haven't run into any budgetary costs. As this project progresses we will continually re-evaluate potential future costs and update this section as necessary.
 
 Depending on the final implementation the following may lead to additional costs:
