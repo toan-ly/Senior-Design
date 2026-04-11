@@ -1,11 +1,16 @@
 # **MedAssist: An Assistive Mental Health Platform**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![uv](https://img.shields.io/badge/uv-5A0FC8?logo=uv&logoColor=white)
 ![LlamaIndex](https://img.shields.io/badge/LlamaIndex-RAG-orange)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?logo=chainlink&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/OpenAI-Gray?logo=openai&logoColor=white&color=555555)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?logo=qdrant&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
+
 
 
 ## Table of Contents
