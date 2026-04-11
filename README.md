@@ -21,7 +21,7 @@
     - [Timeline](#timeline)
     - [Effort Matrix](#effort-matrix)
 - [Test Plan & Results](#test-plan--results)
-- [User Manual](Senior-Design/docs/README.md)
+- [User Manual](#user-manual)
 - [PowerPoint Slideshows](#powerpoint-slideshows)
 - [Expo Poster](#expo-poster)
 - [ABET Concerns Essay](#abet-concerns-essay)
@@ -90,6 +90,9 @@ This project serves as a way to display our technical accumen, explore the expan
 ### Test Plan
 
 ### Results
+
+## User Manual
+[User Manual/Guide](/docs/README.md)
 
 ## PowerPoint Slideshows
 [Fall Presentation Slides](/docs/presentations/Fall_Presentation.pdf)
