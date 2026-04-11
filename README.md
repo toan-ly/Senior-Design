@@ -91,6 +91,7 @@ This project serves as a way to display our technical accumen, explore the expan
 [Test Plan](/docs/testing/Test_Plan.pdf)
 
 ### Results
+[Test Results](/docs/testing/Test_Results.md)
 
 ## User Manual
 [User Manual/Guide](/docs/README.md)
