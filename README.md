@@ -51,9 +51,8 @@ Please view the team contract found [here](/docs/Team_Contract.md) for more deta
 MedAssist is an assistive mental health platform powered by a large language model (LLM) with retrieval-augmented generation (RAG). It offers a free, accessible, and unbiased alternative to mental health care. The system connects an LLM to trusted DSM-5 knowledge to give accurate, context-aware responses. Through an interactive chat interface, users are able to express their thoughts, monitor mood patterns, and track personal growth over time. Alternative resources are also provided for users requiring more professional medically-focused assistance.
 
 ## Project Description
-This project serves as a way to display our technical accumen, explore the expanding field of artificial intelligence, give back to the community in a meaningful way, and combat a problem everyone can relate with. Mental health care is not always readily available and those suffering may be hesistant to reach out. We seek to provide a free, private alternate that not only provides information on how users can improve but allows them to directly interact and confront their emotions on a daily basis.
-
 [Project Description](/docs/Project_Description.md)
+This project serves as a way to display our technical accumen, explore the expanding field of artificial intelligence, give back to the community in a meaningful way, and combat a problem everyone can relate with. Mental health care is not always readily available and those suffering may be hesistant to reach out. We seek to provide a free, private alternate that not only provides information on how users can improve but allows them to directly interact and confront their emotions on a daily basis.
 
 ## User Stories & Design Diagrams
 
@@ -88,6 +87,7 @@ This project serves as a way to display our technical accumen, explore the expan
 ## Test Plan & Results
 
 ### Test Plan
+[Test Plan](/docs/Test_Plan.pdf)
 
 ### Results
 
